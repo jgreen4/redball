@@ -1,0 +1,62 @@
+<html>
+<head>
+	<style type="text/css">
+		.button {
+			background-color: 
+		}
+		</style>
+<script type='text/javascript' src='http://lrn.icstars.org/redball.js'></script>
+<script type='text/javascript' src="jquery.js"></script>
+	function CorleonetheDon(){
+		alert('Corleone')
+	}
+	function moveup(){
+		redball.top = redball.top-80;	
+	}
+	function movedown(){
+		redball.top = redball.top+80;
+	}
+	function moveleft()	{
+		redball.left = redball.left-80;
+		
+	}
+	function moveright() {
+		redball.left = redball.left+80;
+	}
+	function moveupright() {
+		moveright();
+		moveup();
+	}
+	function moveupleft() {
+		moveleft();
+		moveup();
+	}
+	function movedownright() {
+		moveright();
+		movedown();
+	}
+	function movedownleft() {
+		moveleft();
+		movedown();
+	}
+</script>
+</head>
+<body>
+	<div id="buttonConsole">
+			<img id='redball' src='http://www.icstars.org/files/redball.jpg' />
+		<button onclick="CorleonetheDon();">Don of Dons</button>
+		<button onclick="moveup()">move up</button>
+		<button onclick="movedown()">move down</button>
+		<button onclick="moveleft()">move left</button>
+		<button onclick="moveright()">move right</button>
+		<button onclick="moveupright()">move UpRight</button>
+		<button onclick="moveupleft()">move UpLeft</button>
+		<button onclick="movedownright()">move DownRight</button>
+		<button onclick="movedownleft()">move DownLeft</button>
+		<button onclick="moveup(); moveright(); movedown(); moveleft();">squares</button>
+		<button onclick="moveup(); moveright(); movedown(); moveright(); moveleft(); moveleft();">triangle</button>
+		<button onclick="moveup(); moveupright(); moveright(); movedownright(); movedown(); movedownleft(); moveleft(); moveupleft();">octagon</button>
+		</div>
+		
+</body>
+</html>
