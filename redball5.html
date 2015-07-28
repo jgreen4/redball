@@ -1,0 +1,42 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+<style>
+#redball {
+position: absolute;
+left: 100px;
+top: 100px;
+}
+</style>
+<script>
+function fadein() {
+	var elem = $("#redball");
+	elem.fadeIn();
+	}
+function fadeout() {
+	var elem = $("#redball");
+	elem.fadeOut();
+	}
+	function fontsize() {
+	var elem = $(".name");
+	elem.css("font-size", "50px");
+	}
+	function fontgodown() {
+	var elem = $(".name");
+	elem.css("font-size", "25px");
+	}
+</script>	
+</head>
+<body>
+	<h1 class ="name">Dont You Say a Word Joseph Green</h1>
+<p>
+<img id='redball' src='http://www.icstars.org/files/redball.jpg' />
+</p>
+<div class ="effects">
+<button onclick="fadein()">Fading In</button>
+<button onclick="fadeout()">Fading Out</button>
+<button onclick="fontsize()">Font Size</button>
+<button onclick="fontgodown()">Font Go Down</button>
+</div>
+</body>
+</html>
